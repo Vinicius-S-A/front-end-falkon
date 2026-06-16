@@ -1,6 +1,5 @@
 // CONFERIR
-// a) Usar useState para salvar dados;
-// b) Utilizar useEffect para chamar a
+// Utilizar useEffect para chamar a
 // API apenas quando necessário
 
 async function apiFetch(endpoint, body) {
@@ -10,7 +9,7 @@ async function apiFetch(endpoint, body) {
     },
     body: body | []
   })
-  
+
   return response.json()
 }
 

@@ -23,5 +23,6 @@
     { "id": "1", "codigo": "GEEK10", "desconto_porcentagem": 10, "categoria_valida": "geek", "ativo": true },
     { "id": "2", "codigo": "PROMO20", "desconto_porcentagem": 20, "categoria_valida": "perifericos", "ativo": true },
     { "id": "3", "codigo": "EXVENCIDO", "desconto_porcentagem": 50, "categoria_valida": "livros", "ativo": false }
-  ]
+  ],
+  "avaliacoes": []
 }
