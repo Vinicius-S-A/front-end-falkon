@@ -1,28 +1,185 @@
 {
   "produtos": [
-    { "id": "1", "nome": "Teclado Mecânico RGB", "descricao": "Switch Blue, layout ABNT2 com fio destacável.", "preco": 350.00, "categoria": "perifericos", "estoque": 5, "promocao": true, "nota": 4.5 },
-    { "id": "2", "nome": "Mouse Gamer 12000 DPI", "descricao": "Sensor óptico de alta precisão e peso regulável.", "preco": 180.00, "categoria": "perifericos", "estoque": 12, "promocao": false, "nota": 4.8 },
-    { "id": "3", "nome": "Monitor 24 polegadas 144Hz", "descricao": "Painel IPS com 1ms de resposta e ajuste de altura.", "preco": 1200.00, "categoria": "monitores", "estoque": 1, "promocao": false, "nota": 4.2 },
-    { "id": "4", "nome": "Caneca Termo-sensível Star Wars", "descricao": "Muda de estampa quando adicionado líquido quente.", "preco": 60.00, "categoria": "geek", "estoque": 25, "promocao": true, "nota": 4.0 },
-    { "id": "5", "nome": "Livro: Clean Code", "descricao": "Manual de boas práticas de software para desenvolvedores.", "preco": 95.00, "categoria": "livros", "estoque": 0, "promocao": false, "nota": 4.9 },
-    { "id": "6", "nome": "Action Figure Batman", "descricao": "Miniatura articulada de 18cm com acessórios.", "preco": 290.00, "categoria": "geek", "estoque": 4, "promocao": false, "nota": 4.6 },
-    { "id": "7", "nome": "Headset Gamer 7.1 Surround", "descricao": "Isolamento acústico e microfone com cancelamento de ruído.", "preco": 420.00, "categoria": "perifericos", "estoque": 8, "promocao": true, "nota": 3.9 },
-    { "id": "8", "nome": "Comic Book: O Cavaleiro das Trevas", "descricao": "Edição definitiva encadernada e capa dura.", "preco": 110.00, "categoria": "livros", "estoque": 15, "promocao": false, "nota": 5.0 }
+    {
+      "id": "1",
+      "nome": "Teclado Mecânico RGB",
+      "descricao": "Switch Blue, layout ABNT2 com fio destacável.",
+      "preco": 350,
+      "categoria": "perifericos",
+      "estoque": 5,
+      "promocao": true,
+      "nota": 2,
+      "imagem": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=800&q=80"
+    },
+    {
+      "id": "2",
+      "nome": "Mouse Gamer 12000 DPI",
+      "descricao": "Sensor óptico de alta precisão e peso regulável.",
+      "preco": 180,
+      "categoria": "perifericos",
+      "estoque": 12,
+      "promocao": false,
+      "nota": 3,
+      "imagem": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=800&q=80"
+    },
+    {
+      "id": "3",
+      "nome": "Monitor 24 polegadas 144Hz",
+      "descricao": "Painel IPS com 1ms de resposta e ajuste de altura.",
+      "preco": 1200,
+      "categoria": "monitores",
+      "estoque": 1,
+      "promocao": false,
+      "nota": 4.2,
+      "imagem": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=800&q=80"
+    },
+    {
+      "id": "4",
+      "nome": "Caneca Termo-sensível Star Wars",
+      "descricao": "Muda de estampa quando adicionado líquido quente.",
+      "preco": 60,
+      "categoria": "geek",
+      "estoque": 25,
+      "promocao": true,
+      "nota": 4,
+      "imagem": "https://imgs.search.brave.com/2IjIwmSrZgbTby998aRnCUPGPWcwE95ETx4f162-hkE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9odHRw/Mi5tbHN0YXRpYy5j/b20vRF9RX05QXzJY/XzcyMDAxNC1NTEI4/MzAzNDU3MTc1MV8w/MzIwMjUtRS1jYW5l/Y2EtbW9tYS1jZXJh/bWljYS14aWNhcmEt/Z2Vlay01MDBtbC53/ZWJw"
+    },
+    {
+      "id": "5",
+      "nome": "Livro: Clean Code",
+      "descricao": "Manual de boas práticas de software para desenvolvedores.",
+      "preco": 95,
+      "categoria": "livros",
+      "estoque": 0,
+      "promocao": false,
+      "nota": 4.9,
+      "imagem": "https://imgs.search.brave.com/Y0YUeLG3MFjseg-_4EhjRgAHh_6phLhTW16qIK8_TKw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9odHRw/Mi5tbHN0YXRpYy5j/b20vRF9RX05QXzJY/XzYwNDgyMC1DQlQ3/OTkzMjcyNjQ1OF8x/MDIwMjQtRS53ZWJw"
+    },
+    {
+      "id": "6",
+      "nome": "Action Figure Batman",
+      "descricao": "Miniatura articulada de 18cm com acessórios.",
+      "preco": 290,
+      "categoria": "geek",
+      "estoque": 4,
+      "promocao": false,
+      "nota": 4.6,
+      "imagem": "https://imgs.search.brave.com/PdryikSQKJsqutGpWKmkWyyy1d7pPrZwkEIlZwqI9Fo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NzExMGc3SmJCN0wu/anBn"
+    },
+    {
+      "id": "7",
+      "nome": "Headset Gamer 7.1 Surround",
+      "descricao": "Isolamento acústico e microfone com cancelamento de ruído.",
+      "preco": 420,
+      "categoria": "perifericos",
+      "estoque": 8,
+      "promocao": true,
+      "nota": 3.9,
+      "imagem": "https://images.unsplash.com/photo-1599669454699-248893623440?w=800&q=80"
+    },
+    {
+      "id": "8",
+      "nome": "Comic Book: O Cavaleiro das Trevas",
+      "descricao": "Edição definitiva encadernada e capa dura.",
+      "preco": 110,
+      "categoria": "livros",
+      "estoque": 15,
+      "promocao": false,
+      "nota": 5,
+      "imagem": "https://imgs.search.brave.com/EFaNrzwPpOZurr-H0ULjyLpJzUO-OoUVtL_BVKytxVk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMtbmEuc3NsLWlt/YWdlcy1hbWF6b24u/Y29tL2ltYWdlcy9J/LzgxNmtVME4xNU5M/LmpwZw"
+    }
   ],
   "usuarios": [
-    { "id": "1", "nome": "Ana Silva", "email": "ana@email.com", "nivel": "admin", "carteira_saldo": 1500.00 },
-    { "id": "2", "nome": "Bruno Souza", "email": "bruno@email.com", "nivel": "vip", "carteira_saldo": 300.00 },
-    { "id": "3", "nome": "Carlos Lima", "email": "carlos@email.com", "nivel": "comum", "carteira_saldo": 45.00 }
+    {
+      "id": "1",
+      "nome": "Ana Silva",
+      "email": "ana@email.com",
+      "nivel": "admin",
+      "carteira_saldo": 1500
+    },
+    {
+      "carteira_saldo": 335,
+      "id": "2"
+    },
+    {
+      "id": "3",
+      "nome": "Carlos Lima",
+      "email": "carlos@email.com",
+      "nivel": "comum",
+      "carteira_saldo": 45
+    }
   ],
   "pedidos": [
-    { "id": "101", "usuarioId": "2", "produtoId": "1", "quantidade": 1, "data": "2026-05-10", "status": "entregue", "valor_pago": 350.00 },
-    { "id": "102", "usuarioId": "3", "produtoId": "4", "quantidade": 2, "data": "2026-05-24", "status": "pendente", "valor_pago": 120.00 },
-    { "id": "103", "usuarioId": "2", "produtoId": "2", "quantidade": 1, "data": "2026-05-25", "status": "entregue", "valor_pago": 180.00 }
+    {
+      "id": "101",
+      "usuarioId": "2",
+      "produtoId": "1",
+      "quantidade": 1,
+      "data": "2026-05-10",
+      "status": "entregue",
+      "valor_pago": 350,
+      "avaliado": true
+    },
+    {
+      "id": "102",
+      "usuarioId": "3",
+      "produtoId": "4",
+      "quantidade": 2,
+      "data": "2026-05-24",
+      "status": "pendente",
+      "valor_pago": 120,
+      "avaliado": false
+    },
+    {
+      "id": "103",
+      "usuarioId": "2",
+      "produtoId": "2",
+      "quantidade": 1,
+      "data": "2026-05-25",
+      "status": "entregue",
+      "valor_pago": 180,
+      "avaliado": true
+    }
   ],
   "cupons": [
-    { "id": "1", "codigo": "GEEK10", "desconto_porcentagem": 10, "categoria_valida": "geek", "ativo": true },
-    { "id": "2", "codigo": "PROMO20", "desconto_porcentagem": 20, "categoria_valida": "perifericos", "ativo": true },
-    { "id": "3", "codigo": "EXVENCIDO", "desconto_porcentagem": 50, "categoria_valida": "livros", "ativo": false }
+    {
+      "id": "1",
+      "codigo": "GEEK10",
+      "desconto_porcentagem": 10,
+      "categoria_valida": "geek",
+      "ativo": true
+    },
+    {
+      "id": "2",
+      "codigo": "PROMO20",
+      "desconto_porcentagem": 20,
+      "categoria_valida": "perifericos",
+      "ativo": true
+    },
+    {
+      "id": "3",
+      "codigo": "EXVENCIDO",
+      "desconto_porcentagem": 50,
+      "categoria_valida": "livros",
+      "ativo": false
+    }
   ],
-  "avaliacoes": []
+  "avaliacoes": [
+    {
+      "usuarioId": "2",
+      "produtoId": "1",
+      "nota": 2,
+      "comentario": "abc",
+      "data": "2026-6-20",
+      "id": 1
+    },
+    {
+      "usuarioId": "2",
+      "produtoId": "2",
+      "nota": 3,
+      "comentario": "lolololololololo",
+      "data": "2026-6-20",
+      "id": 2
+    }
+  ]
 }

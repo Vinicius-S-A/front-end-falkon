@@ -1,0 +1,99 @@
+.review-form {
+  max-width: 1400px;
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #e7eaf0;
+  border-radius: 20px;
+  padding: 28px;
+  box-shadow: 0 18px 40px rgba(12, 24, 64, 0.08);
+}
+
+.review-header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.review-header h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #111827;
+}
+
+.review-subtitle {
+  margin: 0;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.review-summary {
+  padding: 18px 20px;
+  margin-bottom: 22px;
+  border-radius: 16px;
+  background: #f4f8ff;
+  border: 1px solid #d8e3ff;
+}
+
+.review-summary-title {
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #1f2937;
+}
+
+.review-summary-item {
+  margin-bottom: 8px;
+  color: #334155;
+}
+
+.review-field {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.review-field span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.review-field select,
+.review-field textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 14px;
+  font-size: 15px;
+  color: #111827;
+  background: #f9fafb;
+  transition: border-color 150ms ease, box-shadow 150ms ease;
+}
+
+.review-field textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.review-form button {
+  width: 100%;
+  padding: 16px 0;
+  border: none;
+  border-radius: 14px;
+  background: #252525;
+  /* color: #e2e2e2; */
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.review-form button:hover {
+  background: #2e2e2e;
+}
+
+@media (max-width: 640px) {
+  .review-form {
+    padding: 22px;
+  }
+}

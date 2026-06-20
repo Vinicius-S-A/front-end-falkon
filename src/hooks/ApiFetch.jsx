@@ -1,16 +1,24 @@
-// CONFERIR
-// Utilizar useEffect para chamar a
-// API apenas quando necessário
+async function apiFetch(endpoint, options = {}) {
+  let { method, body } = options
 
-async function apiFetch(endpoint, body) {
-  const response = await fetch(`http://localhost:3000/${endpoint}`, {
+  if (!method) {
+    method = "GET"
+  }
+
+  console.log(method, body)
+
+  const fetchOptions = {
+    method,
     headers: {
       "Content-Type": "application/json"
     },
-    body: body | []
-  })
+    body: body
+  }
 
-  return response.json()
+  const response = await fetch(`http://localhost:3000/${endpoint}`, fetchOptions)
+  const jsonResponse = await response.json()
+
+  return jsonResponse
 }
 
 export default apiFetch

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
-import { apiFetch } from "./ApiFetch"
+import apiFetch from "./ApiFetch"
 
-function useProducts() {
+function getProducts() {
   const [products, setProducts] = useState([])
 
   useEffect(() => {
@@ -10,9 +10,7 @@ function useProducts() {
       .catch(console.error)
   }, [] )
 
-  return { 
-    products 
-  }
+  return products 
 }
 
-export default useProducts
+export default getProducts

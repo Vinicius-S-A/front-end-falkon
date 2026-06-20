@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
-import { apiFetch } from "../services/api"
+import apiFetch from "./ApiFetch"
 
-export function useOrders(userId) {
+function getOrders(userId) {
   const [orders, setOrders] = useState([])
 
   useEffect(() => {
@@ -10,5 +10,7 @@ export function useOrders(userId) {
       .catch(console.error)
   }, [userId])
 
-  return { orders }
+  return orders
 }
+
+export default getOrders

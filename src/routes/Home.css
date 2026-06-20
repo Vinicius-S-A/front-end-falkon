@@ -1,0 +1,63 @@
+.home-container {
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.wallet-container {
+  text-align: right;
+}
+
+.wallet-label {
+  font-size: 18px;
+  color: #666;
+}
+
+.wallet-amount {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.product-card h3 {
+  margin-top: 0;
+}
+
+.product-description {
+  color: #666;
+}
+
+.product-footer {
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.evaluate-link {
+  padding: 6px 10px;
+  background: #0b5;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.evaluate-link:hover {
+  background: #09a;
+}
