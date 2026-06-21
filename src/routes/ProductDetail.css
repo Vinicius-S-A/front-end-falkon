@@ -115,6 +115,11 @@
   color: #333;
 }
 
+.rating-star {
+  vertical-align: middle;
+  display: inline-block;
+}
+
 .review-section {
   padding-top: 24px;
   border-top: 1px solid #eee;
@@ -155,7 +160,8 @@
   font-weight: 500;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
+  
   .product-content {
     grid-template-columns: 1fr;
     gap: 32px;

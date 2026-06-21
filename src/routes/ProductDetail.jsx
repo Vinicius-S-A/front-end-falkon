@@ -3,6 +3,8 @@ import { useParams, useNavigate } from "react-router-dom"
 import apiFetch from "../hooks/ApiFetch"
 import ReviewForm from "../components/ReviewForm"
 import getProductById from "../hooks/GetProductsById"
+import starIcon from "../assets/star.svg"
+import starSolidIcon from "../assets/starsolid.svg"
 import "./ProductDetail.css"
 
 const ProductDetail = () => {
@@ -58,11 +60,20 @@ const ProductDetail = () => {
           <div className="description-section">
             <h3>Descrição do Produto</h3>
             <p>{product.descricao}</p>
-            <p className="rating"><strong>Nota atual:</strong> {product.nota} ⭐</p>
+            <div className="price-info">
+              <p className="rating"><strong>Nota atual:</strong> {(product.nota).toFixed(1)}
+                {[...Array(Math.round(product.nota))].map(() => (
+                  <img src={starSolidIcon} className="rating-star" />
+                ))}
+                {[...Array(5 - Math.round(product.nota))].map(() => (
+                  <img src={starIcon} className="rating-star" />
+                ))}
+              </p>
+            </div>
           </div>
         </div>
       </div>
-      
+
       <div className="review-section">
         <h3>Sua avaliação</h3>
         <ReviewForm produtoId={product.id} onSuccess={(msg) => handleReviewSuccess(msg)} />

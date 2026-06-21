@@ -58,16 +58,20 @@
   color: #111827;
 }
 
-.review-field select,
-.review-field textarea {
+.review-field select {
+    max-width: 200px;
+
+}
+
+.review-field select, .review-field textarea {
   width: 100%;
   padding: 14px 16px;
   border: 1px solid #d1d5db;
   border-radius: 14px;
+
   font-size: 15px;
   color: #111827;
   background: #f9fafb;
-  transition: border-color 150ms ease, box-shadow 150ms ease;
 }
 
 .review-field textarea {
@@ -90,10 +94,4 @@
 
 .review-form button:hover {
   background: #2e2e2e;
-}
-
-@media (max-width: 640px) {
-  .review-form {
-    padding: 22px;
-  }
 }

@@ -9,7 +9,7 @@
       "estoque": 5,
       "promocao": true,
       "nota": 2,
-      "imagem": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=800&q=80"
+      "imagem": "https://imgs.search.brave.com/BYNzCqXTWnwvhhQNdA1t5t_LllPtR-NoTyAj3cp91rg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9odHRw/Mi5tbHN0YXRpYy5j/b20vRF9RX05QXzJY/Xzc0ODIyMC1NTFU3/NDk5NjQ4NDk3MV8w/MzIwMjQtRS53ZWJw"
     },
     {
       "id": "2",
@@ -30,7 +30,7 @@
       "categoria": "monitores",
       "estoque": 1,
       "promocao": false,
-      "nota": 4.2,
+      "nota": 5,
       "imagem": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=800&q=80"
     },
     {
@@ -98,7 +98,7 @@
       "carteira_saldo": 1500
     },
     {
-      "carteira_saldo": 335,
+      "carteira_saldo": 340,
       "id": "2"
     },
     {
@@ -128,7 +128,7 @@
       "data": "2026-05-24",
       "status": "pendente",
       "valor_pago": 120,
-      "avaliado": false
+      "avaliado": true
     },
     {
       "id": "103",
@@ -138,7 +138,27 @@
       "data": "2026-05-25",
       "status": "entregue",
       "valor_pago": 180,
-      "avaliado": true
+      "avaliado": false
+    },
+    {
+      "id": "104",
+      "usuarioId": "2",
+      "produtoId": "3",
+      "quantidade": 1,
+      "data": "2026-05-25",
+      "status": "entregue",
+      "valor_pago": 180,
+      "avaliado": false
+    },
+    {
+      "id": "105",
+      "usuarioId": "2",
+      "produtoId": "4",
+      "quantidade": 1,
+      "data": "2026-05-25",
+      "status": "entregue",
+      "valor_pago": 180,
+      "avaliado": false
     }
   ],
   "cupons": [
@@ -169,17 +189,25 @@
       "usuarioId": "2",
       "produtoId": "1",
       "nota": 2,
-      "comentario": "abc",
+      "comentario": "Achei desconfortável, mas o teclado é bonito.",
       "data": "2026-6-20",
       "id": 1
     },
     {
-      "usuarioId": "2",
-      "produtoId": "2",
-      "nota": 3,
-      "comentario": "lolololololololo",
+      "usuarioId": "3",
+      "produtoId": "4",
+      "nota": 4,
+      "comentario": "",
       "data": "2026-6-20",
       "id": 2
+    },
+    {
+      "usuarioId": "3",
+      "produtoId": "3",
+      "nota": 5,
+      "comentario": "teste",
+      "data": "2026-6-20",
+      "id": 3
     }
   ]
 }
