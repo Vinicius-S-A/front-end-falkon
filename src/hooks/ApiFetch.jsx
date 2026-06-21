@@ -5,8 +5,6 @@ async function apiFetch(endpoint, options = {}) {
     method = "GET"
   }
 
-  console.log(method, body)
-
   const fetchOptions = {
     method,
     headers: {
